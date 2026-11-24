@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atachyon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400&family=Catamaran:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --fg:#111111; --link:#1a56db; --muted:#444; --line:#d4d4d4; --label-bg:#f5f5f5;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Cabin","Ubuntu","Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.65}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+header{text-align:center;padding:42px 20px 8px}
+h1{font-family:"Catamaran","Cabin",sans-serif;font-weight:400;font-size:clamp(2.6rem,6vw,3.6rem);margin:0;letter-spacing:-.01em;line-height:1.1}
+.tagline{margin:12px 0 0;font-size:1.15rem;text-align:center}
+.email{margin:6px 0 0;font-size:.95rem;text-align:center}
+main{max-width:780px;margin:0 auto;padding:36px 24px 80px}
+table{width:100%;border-collapse:collapse;border:1px solid var(--line)}
+th,td{border:1px solid var(--line);padding:12px 16px;vertical-align:top;text-align:left}
+th{width:28%;font-weight:700;background:var(--label-bg)}
+td{hyphens:auto}
+.role{font-weight:400;color:var(--muted);font-size:.9rem}
+tr.divider td{padding:0;height:14px;background:var(--label-bg);border-left:0;border-right:0}
+td ul + p{margin-top:14px}
+td p{margin:0 0 10px}
+td p:last-child{margin-bottom:0}
+td ul{margin:0;padding-left:20px}
+td li{margin:0 0 6px}
+td li:last-child{margin-bottom:0}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px}
+@media (max-width:620px){
+  th,td{padding:10px 12px}
+  th{width:34%}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Atachyon</h1>
+  <p class="tagline">Physical AI for Counter-Intrusion (CI) Ops</p>
+  <p class="email"><a href="https://www.atachyon.com">www.atachyon.com</a></p>
+</header>
+
+<main>
+  <table>
+    <tbody>
+      <tr><th scope="row">Startup Name</th><td>Atachyon</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://www.atachyon.com">www.atachyon.com</a></td></tr>
+      <tr><th scope="row">Vasu Dubey (23)<br><span class="role">Co-founder</span></th><td>
+        <ul>
+          <li>Mechanical engineer, Emergent Ventures grantee and Mercatus Fellow at <a href="https://www.gmu.edu/">George Mason University, USA</a>.</li>
+          <li>Previously co-founded and led Resonance, a machine-learning-based medical device venture for speech restoration in laryngectomy patients, backed by American economist <a href="https://en.wikipedia.org/wiki/Tyler_Cowen">Tyler Cowen</a>.</li>
+          <li>Grew up around the Ordnance Factory campus in Ambernath, giving him early familiarity with India’s defence manufacturing environment.</li>
+        </ul>
+      </td></tr>
+      <tr class="divider"><td colspan="2"></td></tr>
+      <tr><th scope="row">Akshat Singh Rathore (25)<br><span class="role">Co-founder</span></th><td>
+        <ul>
+          <li>Machine learning engineer with experience across cybersecurity, industrial production and enterprise AI.</li>
+          <li>Led cybersecurity initiatives at <a href="https://www.cloudsek.com/">CloudSEK</a>, serving clients across defence, government, aviation and banking.</li>
+          <li>Previously ML Lead at <a href="https://quantiphi.com/">Quantiphi</a>, leading a project involving <a href="https://www.snowflake.com/en/">Snowflake</a> for global enterprise clients.</li>
+        </ul>
+      </td></tr>
+      <tr><th scope="row">Headcount</th><td>4</td></tr>
+      <tr><th scope="row">Team Expertise</th><td>AI/ML, Mechatronics, Radar Electronics &amp; Industrial Design.<br>Ex-Qualcomm, Samsung, CloudSEK, Havells</td></tr>
+      <tr><th scope="row">Overview</th><td>
+        <ul>
+          <li>The nature of threats to national security is changing.</li>
+          <li>Autonomous war will be fought at critical infrastructure, not just borders.</li>
+        </ul>
+      </td></tr>
+      <tr><th scope="row">Problem</th><td>
+        <ul>
+          <li>Existing surveillance relies on fragmented sensors and human monitoring.</li>
+          <li>Standalone counter-drone/UAS systems address only aerial threats, leaving gaps in terrestrial intrusion detection and integrated perimeter security.</li>
+          <li>Existing solutions fall short on three counts: fragmented coverage, human dependency and high operating cost.</li>
+        </ul>
+      </td></tr>
+      <tr><th scope="row">The Gap</th><td>Conventional surveillance systems cannot provide unified, persistent situational awareness for land, air and water through a single system across complex geographies.</td></tr>
+      <tr><th scope="row">Our Solution</th><td>
+        <ul>
+          <li>Proprietary payload integrating radar, EO/IR imaging and edge AI for unified situational awareness across land, air and water in complex geographies.</li>
+          <li>Onboard AI continuously monitors and analyses sensor data at the edge, removing the need for a staffed control room or endless video feeds.</li>
+          <li>Autonomously identifies events of interest and sends only relevant alerts to backend security teams.</li>
+        </ul>
+        <p><b>Impact:</b> Transforms passive surveillance into autonomous threat detection, reducing human dependency while enabling continuous monitoring across land, air and water.</p>
+      </td></tr>
+      <tr><th scope="row">USP</th><td>
+        <ul>
+          <li>Unified 3-in-1 coverage with no backend control room</li>
+          <li>Easy integration of soft kill / hard kill systems</li>
+          <li>Rapidly deployable and grid independent</li>
+          <li>In-house design with real-time Edge AI</li>
+        </ul>
+      </td></tr>
+      <tr><th scope="row">Target Market</th><td>Defence, Maritime and Critical Infrastructure</td></tr>
+      <tr><th scope="row">Target Customers</th><td>Ports, Power &amp; Energy, Petrochemicals, Power Plants, Data Centers and Airports</td></tr>
+      <tr><th scope="row">Competitors</th><td>
+        <p><b>Legacy:</b> AMPL, Techsers, Magal Security, Nelco, L&amp;T Smart World, Sara Electronics</p>
+        <p><b>New Age:</b> IdeaForge, Zen Technologies</p>
+      </td></tr>
+      <tr><th scope="row">Market Size</th><td>Critical infrastructure protection market at USD 3 Bn. Policy enforcement, rearmament, fast-track counter-intrusion procurement and indigenization are the key tailwinds and market drivers.</td></tr>
+      <tr><th scope="row">Our Traction</th><td>Two major commercial operators in its MoU pipeline, covering ~1,700 acres and ~INR 5,000 Cr in combined asset value.</td></tr>
+    </tbody>
+  </table>
+</main>
+
+<footer>&copy; Atachyon</footer>
+</body>
+</html>
