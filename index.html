@@ -13,8 +13,8 @@
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
 }
-:root{color-scheme:light}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *,*::before,*::after{box-sizing:inherit}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:"Cabin","Ubuntu","Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.65}
@@ -26,10 +26,10 @@ h1{font-family:"Catamaran","Cabin",sans-serif;font-weight:400;font-size:clamp(2.
 .email{margin:10px 0 0;font-size:.95rem}
 .email b{font-weight:700}
 main{max-width:1060px;margin:0 auto;padding:36px 24px 80px}
-.intro{display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:44px;align-items:start}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:56px;align-items:start;justify-content:space-between}
 .intro p{margin:0 0 18px;text-align:justify;hyphens:auto}
-.photo{width:100%;aspect-ratio:3/4;margin-top:24px;background:linear-gradient(160deg,#6b8f5e,#2f4a2a 60%,#1c2e1a);display:flex;align-items:flex-end;justify-content:center;color:#fff;font-size:.9rem;overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo{width:100%;max-width:440px;aspect-ratio:1/1;margin:4px 0 0 auto;background:#222;overflow:hidden;position:sticky;top:24px}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
 .social{text-align:center;margin:6px 0 0}
 h2{font-size:1.35rem;font-weight:700;margin:56px 0 18px}
 ol.personal{margin:0;padding:0;list-style:none;max-width:780px}
@@ -42,7 +42,7 @@ ul.orgs li{margin:2px 0;padding-left:.4rem}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px}
 @media (max-width:820px){
   .intro{grid-template-columns:1fr;gap:10px}
-  .photo{max-width:420px;margin:10px auto 0}
+  .photo{max-width:420px;margin:10px auto 0;position:static}
   .intro p{text-align:left}
 }
 </style>
@@ -50,7 +50,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px
 <body>
 <header>
   <h1>Vasu Dubey</h1>
-  <p class="email"><b>Email</b>: <a href="mailto:vasu@example.com">vasudubey02@gmail.com</a></p>
+  <p class="email"><b>Email</b>: <a href="mailto:vasudubey02@gmail.com">vasudubey02@gmail.com</a></p>
 </header>
 
 <main>
@@ -62,7 +62,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px
 
       <p>Earlier, I cofounded <a href="#">Resonance</a>. a medical device startup focused on speech restoration for laryngectomy patients, it was backed by Tyler Cowen.</p>
 
-      <p>After dropping out of college I founded<a href="#">Healthkhata</a>, a fintech startup that enabled cashless experience for patients with insurance out-of-their network coverage..</p>
+      <p>After dropping out of college I founded <a href="#">Healthkhata</a>, a fintech startup that enabled cashless experience for patients with insurance out-of-their network coverage..</p>
 
       <p>Before that, I was co-founder of <a href="#">Earlier Startup</a>, a company based in your city. We were working on improving access to something that matters. Describe the journey and what you built along the way.</p>
 
@@ -70,9 +70,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px
 
       <p class="social"><a href="#">Twitter</a> | <a href="#">Medium</a> | <a href="#">Linkedin</a></p>
     </div>
-    <div class="photo" role="img" aria-label="Photo of Vasu Dubey">
-      <!-- Replace this block with: <img src="your-photo.jpg" alt="Vasu Dubey"> -->
-      <span style="padding:14px">Add your photo here</span>
+    <div class="photo">
+      <img src="1795150070501.png" alt="Photo of Vasu Dubey">
     </div>
   </section>
 
