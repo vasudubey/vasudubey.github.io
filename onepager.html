@@ -26,19 +26,23 @@ h1{font-family:"Catamaran","Cabin",sans-serif;font-weight:400;font-size:clamp(2.
 .tagline{margin:12px 0 0;font-size:1.15rem;text-align:center}
 .email{margin:6px 0 0;font-size:.95rem;text-align:center}
 main{max-width:780px;margin:0 auto;padding:36px 24px 80px}
+h2{font-size:1.35rem;font-weight:700;margin:48px 0 18px}
+h2:first-child{margin-top:0}
+main > p{margin:0 0 18px;text-align:justify;hyphens:auto}
+.person{margin:0 0 6px}
+.person b{font-weight:700}
 table{width:100%;border-collapse:collapse;border:1px solid var(--line)}
 th,td{border:1px solid var(--line);padding:12px 16px;vertical-align:top;text-align:left}
 th{width:28%;font-weight:700;background:var(--label-bg)}
 td{hyphens:auto}
-.role{font-weight:400;color:var(--muted);font-size:.9rem}
-tr.divider td{padding:0;height:14px;background:var(--label-bg);border-left:0;border-right:0}
-td ul + p{margin-top:14px}
 td p{margin:0 0 10px}
 td p:last-child{margin-bottom:0}
-td ul{margin:0;padding-left:20px}
+td ul{margin:10px 0 0;padding-left:20px}
+td p + ul{margin-top:10px}
 td li{margin:0 0 6px}
 td li:last-child{margin-bottom:0}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px}
+@media (max-width:820px){ main > p{text-align:left} }
 @media (max-width:620px){
   th,td{padding:10px 12px}
   th{width:34%}
@@ -48,52 +52,38 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px
 <body>
 <header>
   <h1>Atachyon</h1>
-  <p class="tagline">Physical AI for Counter-Intrusion (CI) Ops</p>
+  <p class="tagline">Tactical Surveillance for Critical &amp; Strategic Infrastructure</p>
   <p class="email"><a href="https://www.atachyon.com">www.atachyon.com</a></p>
 </header>
 
 <main>
+  <h2>Introduction</h2>
+
+  <p class="person"><b>Vasu Dubey (23) — Co-founder</b></p>
+  <p>Vasu is a mechanical engineer and Mercatus Fellow at <a href="https://www.gmu.edu/">George Mason University, USA</a>. He previously co-founded and led Resonance, a machine-learning-based medical device venture focused on speech restoration for laryngectomy patients, backed by American economist <a href="https://en.wikipedia.org/wiki/Tyler_Cowen">Tyler Cowen</a>. He grew up around the Ordnance Factory campus in Ambernath, which contributed to his early familiarity with India’s defence manufacturing environment.</p>
+
+  <p class="person"><b>Akshat Singh Rathore (25) — Co-founder</b></p>
+  <p>Akshat is a machine learning engineer with experience spanning cybersecurity, industrial production and enterprise AI. He previously led cybersecurity initiatives at <a href="https://www.cloudsek.com/">CloudSEK</a>, serving clients across defence, government, aviation and banking. Before CloudSEK, he worked as an ML Lead at <a href="https://quantiphi.com/">Quantiphi</a> and led project involving <a href="https://www.snowflake.com/en/">Snowflake</a> for global enterprise clients.</p>
+
+  <p class="person"><b>Engineering Team</b></p>
+  <p>Based in Bangalore, Atachyon is a team of four, with collective industry experience at <a href="https://www.qualcomm.com/">Qualcomm</a>, <a href="https://semiconductor.samsung.com/">Samsung Semiconductor</a> and <a href="https://havells.com/">Havells</a>. The team brings expertise spanning AI/ML, electronics, chip designing, embedded systems and mechatronics to develop integrated, indigenous defence technologies.</p>
+
+  <h2>About Atachyon</h2>
+
   <table>
     <tbody>
-      <tr><th scope="row">Startup Name</th><td>Atachyon</td></tr>
-      <tr><th scope="row">Website</th><td><a href="https://www.atachyon.com">www.atachyon.com</a></td></tr>
-      <tr><th scope="row">Vasu Dubey (23)<br><span class="role">Co-founder</span></th><td>
-        <ul>
-          <li>Mechanical engineer, Emergent Ventures grantee and Mercatus Fellow at <a href="https://www.gmu.edu/">George Mason University, USA</a>.</li>
-          <li>Previously co-founded and led Resonance, a machine-learning-based medical device venture for speech restoration in laryngectomy patients, backed by American economist <a href="https://en.wikipedia.org/wiki/Tyler_Cowen">Tyler Cowen</a>.</li>
-          <li>Grew up around the Ordnance Factory campus in Ambernath, giving him early familiarity with India’s defence manufacturing environment.</li>
-        </ul>
-      </td></tr>
-      <tr class="divider"><td colspan="2"></td></tr>
-      <tr><th scope="row">Akshat Singh Rathore (25)<br><span class="role">Co-founder</span></th><td>
-        <ul>
-          <li>Machine learning engineer with experience across cybersecurity, industrial production and enterprise AI.</li>
-          <li>Led cybersecurity initiatives at <a href="https://www.cloudsek.com/">CloudSEK</a>, serving clients across defence, government, aviation and banking.</li>
-          <li>Previously ML Lead at <a href="https://quantiphi.com/">Quantiphi</a>, leading a project involving <a href="https://www.snowflake.com/en/">Snowflake</a> for global enterprise clients.</li>
-        </ul>
-      </td></tr>
-      <tr><th scope="row">Headcount</th><td>4</td></tr>
-      <tr><th scope="row">Team Expertise</th><td>AI/ML, Mechatronics, Radar Electronics &amp; Industrial Design.<br>Ex-Qualcomm, Samsung, CloudSEK, Havells</td></tr>
-      <tr><th scope="row">Overview</th><td>
-        <ul>
-          <li>The nature of threats to national security is changing.</li>
-          <li>Autonomous war will be fought at critical infrastructure, not just borders.</li>
-        </ul>
-      </td></tr>
+      <tr><th scope="row">Overview</th><td>We started Atachyon in 2026 with a broader observation that the nature of threats to national security is changing. Autonomous war will be fought at critical infrastructure, not just borders. Critical infrastructure — ports, energy facilities, airports and other strategic assets — is becoming increasingly exposed to conventional and emerging unmanned and autonomous threats.</td></tr>
       <tr><th scope="row">Problem</th><td>
+        <p>Existing surveillance relies on fragmented sensors and human monitoring.</p>
         <ul>
-          <li>Existing surveillance relies on fragmented sensors and human monitoring.</li>
           <li>Standalone counter-drone/UAS systems address only aerial threats, leaving gaps in terrestrial intrusion detection and integrated perimeter security.</li>
           <li>Existing solutions fall short on three counts: fragmented coverage, human dependency and high operating cost.</li>
         </ul>
       </td></tr>
       <tr><th scope="row">The Gap</th><td>Conventional surveillance systems cannot provide unified, persistent situational awareness for land, air and water through a single system across complex geographies.</td></tr>
       <tr><th scope="row">Our Solution</th><td>
-        <ul>
-          <li>Proprietary payload integrating radar, EO/IR imaging and edge AI for unified situational awareness across land, air and water in complex geographies.</li>
-          <li>Onboard AI continuously monitors and analyses sensor data at the edge, removing the need for a staffed control room or endless video feeds.</li>
-          <li>Autonomously identifies events of interest and sends only relevant alerts to backend security teams.</li>
-        </ul>
+        <p>We are building a proprietary payload integrating radar, EO/IR imaging and edge AI to deliver situational awareness for land, air and water in a unified manner across complex geographies.</p>
+        <p>Our in-house SoC design enables edge data processing, fitting the control room inside the tower, operated by an AI agent that relays only important notifications to backend teams instead of unnecessary video feeds or readings.</p>
         <p><b>Impact:</b> Transforms passive surveillance into autonomous threat detection, reducing human dependency while enabling continuous monitoring across land, air and water.</p>
       </td></tr>
       <tr><th scope="row">USP</th><td>
@@ -112,6 +102,8 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px 0 40px
       </td></tr>
       <tr><th scope="row">Market Size</th><td>Critical infrastructure protection market at USD 3 Bn. Policy enforcement, rearmament, fast-track counter-intrusion procurement and indigenization are the key tailwinds and market drivers.</td></tr>
       <tr><th scope="row">Our Traction</th><td>Two major commercial operators in its MoU pipeline, covering ~1,700 acres and ~INR 5,000 Cr in combined asset value.</td></tr>
+      <tr><th scope="row">Raise</th><td>$350,000</td></tr>
+      <tr><th scope="row">Use of Funds</th><td>Increase TRL levels to 5/6 and conclude pilots.</td></tr>
     </tbody>
   </table>
 </main>
